@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    text-transform: capitalize;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    transition: all .2s linear;
+}
+:root{
+    --maincolor: #f9d806;
+    --secondery-color: #ffee80 ;
+    --another-color: #130f40 ;
+    --light-color: #666 ;
+    --border: .1rem solid rgba(0, 0, 0, .1);
+    --shadow: 0 0.5rem 1rem rgba(0 ,0 ,0 ,.1)
+}
+html{
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    font-size: 90%;
+} 
+
+
+/* start header   */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0; right: 0;left: 0;
+    z-index: 99;
+    background-color:#fff;
+    padding: 2rem 150px;
+}
+header .logo span{
+    color: var(--maincolor);
+}
+header .logo {
+    color: var(--another-color);
+    font-size: 1.5rem;
+}
+.header .navbar a {
+    padding: 0 10px;
+    color: black;
+}
+.header .navbar a:hover {
+    color: var(--maincolor);
+}
+.header .btn{
+    background-color:var(--secondery-color);
+    padding: 3px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 1.5rem;
+}
+body{
+    height: 5000px;
+}
+.header i{
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+.header .btn:hover {
+    background-color: var(--maincolor);
+}
+.header.active{
+    box-shadow: var(--shadow);
+}
+#bar{
+    display: none;
+}
+@media (max-width: 950px){
+    html{
+        font-size: 70%;
+    }
+    .header{
+        padding: 2rem;
+    }
+} 
+@media (max-width: 768px){
+    .header i{
+        display: block;
+    }
+    .header .btn{
+        display: none;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 100%;right: 0;left: 0;
+        background-color: #fff;
+        border: var(--border);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .header .navbar.active{
+        clip-path: polygon(0 0,100% 0, 100% 100%, 0 100%);
+    }
+    .header .navbar a{
+        display: block;
+        margin: 2rem;
+        padding: 10px;
+        font-size: 2rem;
+    }
+    #bar{
+        display: block;
+    }
+    /* #bar.fa-bars{
+        /* transform: rotate(180deg); */
+    /* } */ 
+}
+@media (max-width: 450px){
+    html{
+        font-size: 60%;
+    }
+}

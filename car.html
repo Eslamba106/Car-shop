@@ -18,15 +18,15 @@
         <a href="#" class="logo">car<span>Shop</span></a>
         <nav class="navbar">
             <a href="#home">home</a>
-            <a href="#">vehicles</a>
-            <a href="#">services</a>
-            <a href="#">featured</a>
-            <a href="#">reviews</a>
-            <a href="#">contact</a>
+            <a href="#vehicles">vehicles</a>
+            <a href="#services">services</a>
+            <a href="#featured">featured</a>
+            <a href="#reviews">reviews</a>
+            <a href="#contact">contact</a>
         </nav>
         <div>
-            <button class="btn">login</button>
-            <i class="fa-solid fa-user"></i>
+            <button class="btn" id="loginn">login</button>
+            <i class="fa-solid fa-user" id="logg"></i>
         </div>
 
 
@@ -35,6 +35,7 @@
 
 <!-- Start login  -->
 <div class="loginform">
+    <span class="fa-solid fa-xmark" id="closee"></span>
     <form action="">
         <h3>user login</h3>
         <input type="email" placeholder="email" class="box" id="">
@@ -43,8 +44,8 @@
         <input type="submit" value="login now" class="btn">
         <p>or login with</p>
         <div class="buttons">
-            <a href="#">googel</a>
-            <a href="#">facebook</a>
+            <a href="#" class="btn" >googel</a>
+            <a href="#" class="btn" >facebook</a>
         </div>
         <p>don't have an acount <a href="#">create now</a></p>
 
@@ -54,15 +55,55 @@
 </div>
 
     <!-- Start Home  -->
-
+    <section id="#home" class="home">
+        <h1 class="home-one" data-speed="-2">Find Your Car</h1>
+        <img class="home-one" data-speed="5" src="src/car1.png" alt="formal img car">
+        <a class="btn home-one" data-speed="7" href="#">Explore Car</a>
+    </section>
     <!-- End Home  -->
 
 
+<!-- start icon  -->
+<div class="icon-container">
+    <div class="icons">
+        <i class="fa-solid fa-house"></i>
+        <div class="content">
+            <h3>100+</h3>
+            <p>branches</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fa-solid fa-car"></i>
+        <div class="content">
+            <h3>100+</h3>
+            <p>cars sold</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fa-solid fa-users"></i>
+        <div class="content">
+            <h3>100+</h3>
+            <p>happy clinets</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fa-solid fa-car"></i>
+        <div class="content">
+            <h3>100+</h3>
+            <p>new car</p>
+        </div>
+    </div>
+</div>
+<!-- end icon  -->
+
+<!-- start vehicles  -->
+<section class="vehicles" id="vehicles"></section>
 
 
-
-
-
+<!-- end vehicles -->
 
     <script src="https://kit.fontawesome.com/ca9a6c5a17.js" crossorigin="anonymous"></script>
     <!-- Java Script Link -->

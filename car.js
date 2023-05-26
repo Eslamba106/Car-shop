@@ -16,3 +16,13 @@ window.onscroll = () =>{
 window.onload = () =>{
         document.querySelector('.header').classList.add('active');
 }
+document.querySelector('#loginn').onclick = () =>{
+    document.querySelector('.loginform').classList.toggle('active')
+} 
+
+document.querySelector('#closee').onclick = () =>{
+    document.querySelector('.loginform').classList.remove('active')
+} 
+document.querySelector('#logg').onclick = ()=>{
+    document.querySelector('.loginform').classList.toggle('active');
+}

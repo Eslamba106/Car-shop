@@ -229,7 +229,6 @@ section {
     border-radius: 20px;
 }
 .icon-container .icons{
-    /* width: 100%; */
     background-color: #fff;
     box-shadow: var(--shadow);
     display: flex;
@@ -266,3 +265,53 @@ section {
 .icon-container .icons:hover p{
     color: var(--maincolor);
 }
+
+/* start vehicles  */
+.vehicles .slider {
+    padding: 5rem 0;
+    overflow-x: hidden;
+    font-size: 1.3rem;
+    text-align: center;
+
+}
+.vehicles .slider .wrepper {
+    position: relative;
+}
+.vehicles .slider .wrepper img{
+    width: 800px;
+}
+.vehicles .slider .wrepper .nextt{
+    font-size: 5rem;
+    cursor: pointer;
+    /* text-align: center; */
+    height: 60%;
+    z-index: 1;
+}
+.vehicles .slider .wrepper .nextt#prebtn{
+    position: absolute;
+    width: 30%;
+    padding-top: 10%;
+    /* padding-left: 120px; */
+    top: 0;left: 0;
+}
+.vehicles .slider .wrepper .nextt#nextbtn{
+    position: absolute;
+    width: 30%;
+    padding-top: 10%;
+    /* padding-right: 120px; */
+    top: 0;right: 0;
+}
+.vehicles .slider .activecircle .fa-circle{
+    margin: 20px 0;
+    color: var(--maincolor);
+}
+.vehicles .slider .activecircle .fa-solid{
+    font-size: 1.25rem;
+}
+.vehicles .slider .wrepper .wrepper-box{
+    display: flex;
+    transition: all .2s ease-in-out;
+    margin-left: 15vw;
+}
+
+/* end vehicles  */

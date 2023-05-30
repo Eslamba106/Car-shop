@@ -187,7 +187,7 @@ header .logo {
     cursor: pointer;
 }
 section {
-    padding: 2rem 150px;
+    padding: 4rem ;
 }
 .home{
     padding-top: 10rem;
@@ -267,6 +267,9 @@ section {
 }
 
 /* start vehicles  */
+.vehicles{
+    width: 100%;
+}
 .vehicles .slider {
     padding: 5rem 0;
     overflow-x: hidden;
@@ -277,28 +280,22 @@ section {
 .vehicles .slider .wrepper {
     position: relative;
 }
-.vehicles .slider .wrepper img{
-    width: 800px;
-}
 .vehicles .slider .wrepper .nextt{
     font-size: 5rem;
     cursor: pointer;
-    /* text-align: center; */
     height: 60%;
     z-index: 1;
 }
 .vehicles .slider .wrepper .nextt#prebtn{
     position: absolute;
-    width: 30%;
+    /* width: 30%; */
     padding-top: 10%;
-    /* padding-left: 120px; */
     top: 0;left: 0;
 }
 .vehicles .slider .wrepper .nextt#nextbtn{
     position: absolute;
-    width: 30%;
+    /* width: 30%; */
     padding-top: 10%;
-    /* padding-right: 120px; */
     top: 0;right: 0;
 }
 .vehicles .slider .activecircle .fa-circle{
@@ -311,7 +308,32 @@ section {
 .vehicles .slider .wrepper .wrepper-box{
     display: flex;
     transition: all .2s ease-in-out;
-    margin-left: 15vw;
+    margin-left: 25vw;
+}
+.vehicles .slider .wrepper .wrepper-box .box{
+    width: 450px;
+    text-align: center;
+}
+.vehicles .slider .wrepper .wrepper-box .box img{
+    width: 400px;
+    opacity: 0.5;
+    
+}
+.vehicles .slider .wrepper .wrepper-box .box .content{
+    margin-top: 9rem;
+    display: none;
+}
+.vehicles .slider .wrepper .wrepper-box .box.active{
+    width: 300px;
+    margin: 0 8rem;
+}
+.vehicles .slider .wrepper .wrepper-box .box.active img{
+    opacity: 1;
+    transform: scale(1.5);
+}
+.vehicles .slider .wrepper .wrepper-box .box.active .content{
+    display: block;
+    width: 100%;
 }
 
 /* end vehicles  */

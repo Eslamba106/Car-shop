@@ -14,19 +14,19 @@
     transition: all .2s linear;
 }
 :root{
-    --maincolor: #f9d806;
-    --secondery-color: #ffee80 ;
+    --maincolor:red ;
+    --secondery-color: rgb(231, 90, 90);
     --another-color: #130f40 ;
     --light-color: #666 ;
     --border: .1rem solid rgba(0, 0, 0, .1);
     --shadow: 0 0.5rem 1rem rgba(0 ,0 ,0 ,.1)
 }
 html{
-    overflow-x: hidden;
-    scroll-padding-top: 7rem;
     font-size: 90%;
 } 
-
+body{
+    height: 5000px;
+}
 
 /* start header   */
 header {
@@ -108,10 +108,7 @@ header .logo {
     #bar{
         display: block;
     }
-    
-    /* #bar.fa-bars{
-        /* transform: rotate(180deg); */
-    /* } */ 
+
 }
 @media (max-width: 450px){
     html{
@@ -265,75 +262,15 @@ section {
 .icon-container .icons:hover p{
     color: var(--maincolor);
 }
-
-/* start vehicles  */
-.vehicles{
-    width: 100%;
-}
-.vehicles .slider {
-    padding: 5rem 0;
-    overflow-x: hidden;
-    font-size: 1.3rem;
-    text-align: center;
-
-}
-.vehicles .slider .wrepper {
-    position: relative;
-}
-.vehicles .slider .wrepper .nextt{
-    font-size: 5rem;
-    cursor: pointer;
-    height: 60%;
-    z-index: 1;
-}
-.vehicles .slider .wrepper .nextt#prebtn{
-    position: absolute;
-    /* width: 30%; */
-    padding-top: 10%;
-    top: 0;left: 0;
-}
-.vehicles .slider .wrepper .nextt#nextbtn{
-    position: absolute;
-    /* width: 30%; */
-    padding-top: 10%;
-    top: 0;right: 0;
-}
-.vehicles .slider .activecircle .fa-circle{
-    margin: 20px 0;
+.bad{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    padding-top: 12.5px;
     color: var(--maincolor);
-}
-.vehicles .slider .activecircle .fa-solid{
-    font-size: 1.25rem;
-}
-.vehicles .slider .wrepper .wrepper-box{
-    display: flex;
-    transition: all .2s ease-in-out;
-    margin-left: 25vw;
-}
-.vehicles .slider .wrepper .wrepper-box .box{
-    width: 450px;
-    text-align: center;
-}
-.vehicles .slider .wrepper .wrepper-box .box img{
-    width: 400px;
-    opacity: 0.5;
-    
-}
-.vehicles .slider .wrepper .wrepper-box .box .content{
-    margin-top: 9rem;
+    border-radius: 50%;
+    right: 10px;
+    bottom: 10px;
+    position: fixed;
     display: none;
 }
-.vehicles .slider .wrepper .wrepper-box .box.active{
-    width: 300px;
-    margin: 0 8rem;
-}
-.vehicles .slider .wrepper .wrepper-box .box.active img{
-    opacity: 1;
-    transform: scale(1.5);
-}
-.vehicles .slider .wrepper .wrepper-box .box.active .content{
-    display: block;
-    width: 100%;
-}
-
-/* end vehicles  */

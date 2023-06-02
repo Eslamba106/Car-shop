@@ -27,38 +27,34 @@ document.querySelector('#logg').onclick = ()=>{
     document.querySelector('.loginform').classList.toggle('active');
 }
 
+// write effect 
+let ha = 'Find Your Car';
+let indexx = 1;
 
-let wrapper = document.querySelector('.wrepper-box');
-let activeBox = wrapper.querySelectorAll('.box');
-let activeCircel = document.querySelector('.activecircle').querySelectorAll('.fa-circle');
-let nextBtn = document.querySelector('#nextbtn');
-let preBtn = document.querySelector('#prebtn');
-
-let index = 0;
-
-nextBtn.onclick = () =>{
-    index++;
-    changebox()
+function eslamm(){
+    document.getElementById('ha').textContent = ha.slice(0,indexx);
+    indexx++;
 }
-preBtn.onclick = () =>{
-    index--;
-    changebox()
-}
-let changebox = () => {
-    if(index > activeBox.length - 1){
-        index = 0
-    }else if(index <0){
-        index = activeBox.length - 1
-    }
+setInterval(function(){
+    eslamm();
+},500)
 
-    for(let i = 0 ; i < activeBox.length ; i++){
-        if(i === index){
-            activeBox[i].classList.add('active');
-            activeCircel[i].classList.add('fa-solid');
-            wrapper.style.transform = `translateX(${index* - 250}px)`
-        }else{
-            activeBox[i].classList.remove('active');
-            activeCircel[i].classList.remove('fa-solid');
-        }
+let ans = document.getElementById('bada');
+let anss = ans.innerHTML;
+console.log(anss)
+
+// scroll 
+window.onscroll = function(){
+    if(scrollY >= 400 ){
+        ans.style.display = 'block';
+    }else{
+        ans.style.display = 'none';
+        
     }
+}
+ans.onclick = function(){
+    window.scroll({
+        behavior: 'smooth',
+        top:0,
+    })
 }

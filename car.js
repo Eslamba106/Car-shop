@@ -58,3 +58,43 @@ ans.onclick = function(){
         top:0,
     })
 }
+// slider 
+let Box = document.querySelectorAll('.Box');
+let preBtn = document.querySelector('.fa-angle-left');
+let nextBtn = document.querySelector('.fa-angle-right');
+
+let ind = 0 ;
+
+let interval = setInterval(run ,2000);
+function run(){
+    ind++;
+    changeImg();
+}
+
+let changeImg = () =>{
+    if(ind < 0){
+        ind = Box.length - 1;
+    }else if(ind > Box.length -1){
+        ind = 0;
+    }
+    Box.forEach((slide) =>{
+        slide.style.transform = `translateX(-${ind*100}%)`
+    })
+}
+preBtn.onclick = () =>{
+    ind--;
+    changeImg()
+    resetInterval()
+}
+nextBtn.onclick = () =>{
+    ind++;
+    changeImg()
+    resetInterval()
+}
+
+const resetInterval = () =>{
+    clearInterval(interval);
+    interval = setInterval(run ,2000);
+}
+
+

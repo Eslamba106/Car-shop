@@ -274,3 +274,36 @@ section {
     position: fixed;
     display: none;
 }
+
+.slider {
+    position: relative;
+}
+.slider .Btn i{
+    position: absolute;
+    top: 240px;
+    font-size: 4rem;
+    color: var(--maincolor);
+    cursor: pointer;
+}
+.slider .Btn .fa-angle-left {
+    left: 5rem;
+}
+.slider .Btn .fa-angle-right {
+    right: 5rem;
+}
+.slider .slider-w{
+    margin: auto;
+    display: flex;
+    width: 28%;
+    overflow: hidden;
+
+}
+
+.slider .slider-w .Box {
+    transition: 0.5s;
+}
+.slider .slider-w .Box img{
+    width: 450px;
+}
+
+
